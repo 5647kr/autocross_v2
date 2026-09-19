@@ -1,1 +1,47 @@
 @import "./tailwind.css";
+
+:root {
+  --text-main: #17181a;
+  --text-sub: #6d7476;
+  --text-soft: rgba(23, 24, 26, 0.0745);
+  --border: #d9d9d9;
+  --warning: #ff5a1f;
+  --error: #d6362b;
+  --error-bg: rgba(214, 54, 43, 0.3);
+  --bg: #ffffff;
+}
+
+html {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text-main);
+  letter-spacing: -2.5%;
+}
+
+svg {
+  width: 20px;
+  height: 20px;
+  stroke-width: 1px;
+}
+
+@media screen and (min-width: 1024px) {
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+input,
+select:focus {
+  outline: none;
+}
+
+button,
+a {
+  cursor: pointer;
+}
